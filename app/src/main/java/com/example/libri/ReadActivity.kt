@@ -98,17 +98,9 @@ class ReadActivity : AppCompatActivity(), BottomSheetFragment.FontSelectionListe
         titleTextView.text = title
 
         val bottomSheetFragment = BottomSheetFragment()
-
-
-
         val settingsButton = findViewById<Button>(R.id.settingsButton)
         settingsButton.setOnClickListener {
             bottomSheetFragment.show(supportFragmentManager, "BottomSheetDialog")
-        }
-
-        val selectedFont = sharedPreferences.getString("selectedFont", null)
-        if (selectedFont != null) {
-            applyFontToTextView(contentTextView, selectedFont)
         }
 
         // Восстановить прогресс скроллинга
