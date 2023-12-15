@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity">
+
+    <RelativeLayout
+        android:id="@+id/backgroundRelative"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/actionRelative"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/relative_lib">
+
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="10dp"
+            android:text="Аа"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="BackClick"
+            android:background="@drawable/icon_back" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/actionRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_horizontal|end"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</RelativeLayout>

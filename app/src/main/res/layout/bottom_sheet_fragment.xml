@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        style="@style/AppModalStyle"
+        app:behavior_peekHeight="250dp"
+        android:orientation="vertical"
+        app:behavior_hideable="true">
+
+        <Spinner
+            android:id="@+id/spinnerFont"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:entries="@array/font"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/buttonDark"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerFont"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/buttonWhite"
+            style="@style/button_dark_slyle"
+            android:text="Button"
+            android:textColor="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonWhite"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerFont"
+            android:layout_marginTop="10dp"
+            style="@style/button_white_style"
+            android:textColor="#00FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/buttonNewspaper"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerFont"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#00FFFFFF"
+            android:layout_marginEnd="10dp"
+            style="@style/button_paper_style"
+            android:layout_toEndOf="@+id/buttonWhite"
+            android:text="Button" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

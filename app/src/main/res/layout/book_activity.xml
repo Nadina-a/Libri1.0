@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/md_theme_light_outline"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/librRel"/>
+    <RelativeLayout
+        android:id="@+id/librRel"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/relative_lib">
+
+        <TextView
+            android:id="@+id/textLib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Библиотека"
+            android:textSize="28sp"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="60dp"
+            android:layout_toRightOf="@+id/textLib"
+            android:layout_marginTop="20dp"
+            android:onClick="InformationClick"
+            android:background="@drawable/information" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

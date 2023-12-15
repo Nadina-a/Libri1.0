@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+    <style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:windowBackground" type="">@drawable/splash_screen</item>
+    </style>
+
+        <style name="SpinnerDropdownItemStyle"
+            parent="Widget.AppCompat.DropDownItem.Spinner">
+            <item name="android:textSize">38sp</item>
+        </style>
+
+        <style name="AppBottomSheetDialogTheme"
+            parent="Theme.Design.Light.BottomSheetDialog">
+            <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        </style>
+
+        <style name="AppModalStyle"
+            parent="Widget.Design.BottomSheet.Modal">
+            <item name="android:background">@drawable/bottom_sheet_background</item>
+        </style>
+    <style name="button_paper_style"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/button_background_paper</item>
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+    </style>
+
+    <style name="button_dark_slyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/button_dark</item>
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+    </style>
+
+    <style name="button_white_style"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/button_white</item>
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+    </style>
+
+
+
+</resources>
