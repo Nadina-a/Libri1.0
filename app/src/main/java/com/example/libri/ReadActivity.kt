@@ -39,7 +39,7 @@ class ReadActivity : AppCompatActivity(), BottomSheetFragment.FontSelectionListe
         val contentTextView: TextView = findViewById(R.id.contentTextView)
         scrollView = findViewById(R.id.scrollView)
 
-        // Восстановите сохраненный размер текста из SharedPreferences
+        
         val selectedTextSize = sharedPreferences.getFloat("selectedTextSize", -1f)
         if (selectedTextSize != -1f) {
             contentTextView.textSize = selectedTextSize
@@ -51,12 +51,12 @@ class ReadActivity : AppCompatActivity(), BottomSheetFragment.FontSelectionListe
 
         val gestureDetector = GestureDetector(this, object : GestureDetector.SimpleOnGestureListener() {
             override fun onSingleTapUp(e: MotionEvent): Boolean {
-                // Получите WindowInsetsController
+                
                 val controller = ViewCompat.getWindowInsetsController(scrollView)
 
                 // Видны ли панели
                 if (controller?.systemBarsBehavior == WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_TOUCH) {
-                    // Задержите скрытие системных панелей на 300 мс
+                    
                     scrollView.postDelayed({
                         // Скрыть системные панели
                         controller.hide(WindowInsetsCompat.Type.systemBars())
@@ -89,7 +89,7 @@ class ReadActivity : AppCompatActivity(), BottomSheetFragment.FontSelectionListe
             }
         })
 
-// Установите слушатель нажатий для основного View
+
         scrollView.setOnTouchListener { _, event ->
             gestureDetector.onTouchEvent(event)
         }
