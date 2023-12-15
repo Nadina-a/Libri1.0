@@ -39,12 +39,6 @@ class ReadActivity : AppCompatActivity(), BottomSheetFragment.FontSelectionListe
         val contentTextView: TextView = findViewById(R.id.contentTextView)
         scrollView = findViewById(R.id.scrollView)
 
-        
-        val selectedTextSize = sharedPreferences.getFloat("selectedTextSize", -1f)
-        if (selectedTextSize != -1f) {
-            contentTextView.textSize = selectedTextSize
-        }
-
 // Предварительная загрузка анимации
         actionRelative.alpha = 0f
         actionRelative.animate().alpha(1f).setDuration(0).start()
